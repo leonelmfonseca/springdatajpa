@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 import java.time.LocalDate;
 
@@ -15,6 +16,7 @@ import java.time.LocalDate;
 // It tells Hibernate that this class should be mapped to a database table.
 @Entity
 @Table(name = "USERS")
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @RequiredArgsConstructor
